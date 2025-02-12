@@ -24,6 +24,11 @@ function preload(){
   blink = loadAnimation("blink_1.png","blink_2.png","blink_3.png");
   eat = loadAnimation("eat_0.png","eat_1.png","eat_2.png","eat_3.png","eat_4.png");
   sad = loadAnimation("sad_1.png","sad_2.png","sad_3.png");
+  blink.playing = true;
+  eat.playing = true;
+  sad.playing = true;
+  sad.looping =  false;
+  eat.looping = false;
 }
 function setup(){ 
   createCanvas(500,700);
